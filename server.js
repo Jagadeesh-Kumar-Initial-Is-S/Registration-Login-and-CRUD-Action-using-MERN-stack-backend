@@ -82,9 +82,9 @@ app.use("/", (req, res, next) => {
 app.get("/", (req, res) => {
   res.status(200).json({
     status: true,
-    title: 'Apis'
+    title: 'Apis',
+    advertisement : "Submitted and coded by Jagadeesh Kumar . S, you may send mail to my email address which is jagadeesh_2k17@proton.me and you may contribute some money to my Indian Unified Payment Interface (UPI) which is jagadeesh-kumar@ybl ."
   });
-  res.send( {advertisement : "Submitted and coded by Jagadeesh Kumar . S, you may send mail to my email address which is jagadeesh_2k17@proton.me and you may contribute some money to my Indian Unified Payment Interface (UPI) which is jagadeesh-kumar@ybl ."});
 });
 
 /* login api */
