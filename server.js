@@ -9,13 +9,13 @@ var multer = require('multer'),
 var mongoose = require("mongoose");
 // mongoose.connect("mongodb://localhost/productDB");
 
-// app.use(cors("Access-Control-Allow-Origin: *"));
+app.use(cors("Access-Control-Allow-Origin: https://registration-login-and-crud-action-using-mern-stack-frontend.vercel.app/"));
 
-app.use(() => (req, res, next) =>{
-  res.header("Access-Control-Allow-Origin", "https://registration-login-and-crud-action-using-mern-stack-frontend.vercel.app/");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// app.use(() => (req, res, next) =>{
+//   res.header("Access-Control-Allow-Origin", "https://registration-login-and-crud-action-using-mern-stack-frontend.vercel.app/");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
 
 const dotenv = require('dotenv');
 dotenv.config();
