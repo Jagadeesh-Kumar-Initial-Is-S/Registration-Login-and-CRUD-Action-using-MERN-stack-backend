@@ -10,8 +10,8 @@ var mongoose = require("mongoose");
 // mongoose.connect("mongodb://localhost/productDB");
 
 var corsOptions = {
-  origin: 'https://registration-login-and-crud-action-using-mern-stack-frontend.vercel.app',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: '*',
+  optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(corsOptions()));
 
