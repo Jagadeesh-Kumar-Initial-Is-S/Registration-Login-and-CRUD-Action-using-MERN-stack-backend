@@ -9,6 +9,8 @@ var multer = require('multer'),
 var mongoose = require("mongoose");
 // mongoose.connect("mongodb://localhost/productDB");
 
+app.use(cors('*'));
+
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -46,7 +48,6 @@ var upload = multer({
     callback(null, true)
   }
 });
-app.use(cors());
 app.use(express.static('uploads'));
 app.use(bodyParser.json());       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
