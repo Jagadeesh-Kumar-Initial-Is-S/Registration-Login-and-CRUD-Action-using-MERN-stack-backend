@@ -10,7 +10,8 @@ var mongoose = require("mongoose");
 // mongoose.connect("mongodb://localhost/productDB");
 
 var corsOptions = {
-  origin: '*',
+  'Access-Control-Allow-Origin':'*',
+  // origin: '*',
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 app.use(cors(corsOptions()));
